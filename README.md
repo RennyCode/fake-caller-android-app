@@ -19,5 +19,5 @@ For timed call selection, the app will open up the main menu until the job sched
 The users will be saved in a Firebase system, and for each user, a list of contacts and a text-to-speech string will be stored. In the app, each user will have access only to the contacts that are associated with him.
 
 <p align="center">
-  <img src="/rtb.png" width="350" title="rtb pic"/>
+  <img src="./rtd.png" width="350" title="rtb pic"/>
 </p>
