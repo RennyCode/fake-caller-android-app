@@ -2,6 +2,12 @@
 A fake caller app built in Android Studio allows you to manage a list of contacts and time your fake call for your convenience.
 Firebase authentication and a real-time database
 
+## Features:
+- Quick Call : fake a call immediately.
+- Authentication : sign in by email and password.
+- Personalized contacts : create and managed contacts
+- timed call : set a time for a fake call.
+
 ### App Flow
 The App opens on the main menu, where the user can select to set contacts or make an immediate call. The call now option will start a fake call with the default contact, and setting contacts will open the login screen.
 In a fake call, the contact information will show on a screen with buttons and a timer. The user will be able to answer the call and will be met with a text-to-speech response.
