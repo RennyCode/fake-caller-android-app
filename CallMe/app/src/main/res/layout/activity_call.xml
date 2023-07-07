@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".CallActivity">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:layout_marginTop="60dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="36sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+972521234567"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/name"/>
+
+        <ImageView
+            android:id="@+id/person_icon"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginVertical="5dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:src="@drawable/baseline_person_24"
+            android:layout_below="@+id/number"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="00:00:00"
+                android:layout_marginVertical="5dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@+id/person_icon"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/option_layout1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/speaker"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_300"
+            android:layout_toLeftOf="@+id/mute"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            app:icon="@drawable/baseline_speaker_phone_24"
+            android:enabled="false"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_300"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            app:icon="@drawable/baseline_volume_off_24"
+            android:enabled="false"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/keypad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/green_300"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/mute"
+            app:icon="@drawable/baseline_keyboard_24"
+            android:enabled="false"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/option_layout2"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/add"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_300"
+            android:layout_toLeftOf="@+id/video"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            app:icon="@drawable/baseline_add_24"
+            android:enabled="false"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_300"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            app:icon="@drawable/baseline_videocam_24"
+            android:enabled="false"
+            android:visibility="invisible"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/green_300"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/video"
+            app:icon="@drawable/baseline_bluetooth_24"
+            android:enabled="false"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/call_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/green_300"
+            android:textColor="@color/black"
+            android:layout_margin="45dp"
+            app:icon="@drawable/baseline_local_phone_24" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/call_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="45dp"
+            android:backgroundTint="@color/red_300"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            app:icon="@drawable/baseline_phone_missed" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
